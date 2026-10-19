@@ -1,19 +1,19 @@
 # Wiskunde
 
-> Alle theorie van de oefentoets **Startvaardigheden Wiskunde**, per opgavecode (1a t/m 7e). Dezelfde indeling als in het oefenspel SOM hierboven: lees hier de theorie en oefen daarna in SOM.
+> Alle theorie van de oefentoets **Startvaardigheden Wiskunde**, per onderwerp (1a t/m 8g), genummerd en geordend zoals in het oefenspel SOM hierboven: lees hier de theorie en oefen daarna in SOM.
 
 ## Overzicht
 
 | Hoofdstuk | Codes en onderwerpen |
 |---|---|
 | 1. Rekenen | **1a** Rekenvolgorde · **1b** Machten en wortels |
-| 2. Algebra en machten | **1c** Waarden invullen · **5a** Herleiden met letters · **5b** Herleiden met machten · **4a** Machten vermenigvuldigen · **4b** Machten delen · **4c** Schrijf als macht van 3 · **4d** Macht van een macht · **4e** Zo simpel mogelijk |
+| 2. Algebra en machten | **2a** Waarden invullen · **2b** Herleiden met letters · **2c** Herleiden met machten · **2d** Machten vermenigvuldigen · **2e** Machten delen · **2f** Schrijf als macht van 3 · **2g** Macht van een macht · **2h** Zo simpel mogelijk |
 | 3. Statistiek en kansen | **3a** Gemiddelde · **3b** Mediaan · **3c** Modus · **3d** Kans met dobbelstenen · **3e** Kans met kaarten |
-| 4. Haakjes | **1d** Haakjes wegwerken · **1e** Dubbele haakjes · **7a** Buiten haakjes halen |
-| 5. Breuken zonder letters | **2a** Breuken optellen · **2b** Breuken keer en gedeeld |
-| 6. Breuken met letters | **2c** Letterbreuken vereenvoudigen · **2d** Letterbreuken optellen · **2e** Letterbreuken keer en gedeeld |
-| 7. Lijnen en vergelijkingen | **6a** Balansmethode · **6b** Balansmethode met haakjes · **6c** Ongelijkheden · **6d** Richtingscoëfficiënt · **6e** Functie van een lijn |
-| 8. Hogeregraadsfuncties | **7b** Som-productmethode · **7c** Ontbinden, lastiger · **5c** Snijpunten met de assen · **5d** Snijpunten met een lijn · **5e** Functie van een grafiek · **7d** Vergelijkingen oplossen · **7e** Vergelijkingen, lastiger |
+| 4. Haakjes | **4a** Haakjes wegwerken · **4b** Dubbele haakjes · **4c** Buiten haakjes halen |
+| 5. Breuken zonder letters | **5a** Breuken optellen · **5b** Breuken keer en gedeeld |
+| 6. Breuken met letters | **6a** Letterbreuken vereenvoudigen · **6b** Letterbreuken optellen · **6c** Letterbreuken keer en gedeeld |
+| 7. Lijnen en vergelijkingen | **7a** Balansmethode · **7b** Balansmethode met haakjes · **7c** Ongelijkheden · **7d** Richtingscoëfficiënt · **7e** Functie van een lijn |
+| 8. Hogeregraadsfuncties | **8a** Som-productmethode · **8b** Ontbinden, lastiger · **8c** Snijpunten met de assen · **8d** Snijpunten met een lijn · **8e** Functie van een grafiek · **8f** Vergelijkingen oplossen · **8g** Vergelijkingen, lastiger |
 
 # Hoofdstuk 1: Rekenen
 
@@ -133,9 +133,9 @@ Zonder haakjes hoort de macht alleen bij het getal, niet bij het minteken. Dit i
 
 # Hoofdstuk 2: Algebra en machten
 
-## 1c · Waarden invullen
+## 2a · Waarden invullen
 
-*een letter vervangen door een getal*
+*een letter vervangen door een getal · in de oefentool: 1c*
 
 **Een formule is een recept**
 
@@ -180,9 +180,9 @@ Na het invullen is het gewoon een gewone som: haakjes, machten, keer en delen, e
 - Je las (3)² als −3². Ingevuld hoort het minteken erbij.
 - Je las (−2)² als −2². Ingevuld hoort het minteken erbij.
 
-## 5a · Herleiden met letters
+## 2b · Herleiden met letters
 
-*gelijksoortige termen samenvoegen*
+*gelijksoortige termen samenvoegen · in de oefentool: 5a*
 
 **Appels en bananen**
 
@@ -233,9 +233,9 @@ Staat er een maalteken in de som, dan doe je dat eerst — pas daarna optellen.
 - Andere letter of andere macht = andere soort. Niet optellen.
 - Je vergat de losse xy aan het begin mee te tellen (die heeft coëfficiënt 1).
 
-## 5b · Herleiden met machten
+## 2c · Herleiden met machten
 
-*optellen én vermenigvuldigen door elkaar*
+*optellen én vermenigvuldigen door elkaar · in de oefentool: 5b*
 
 **Twee regels tegelijk**
 
@@ -281,9 +281,9 @@ Bij keer tel je de machten op en vermenigvuldig je de getallen.
 - Na het vermenigvuldigen moet je de twee termen optéllen.
 - Optellen verandert de macht niet: b² + b² blijft b².
 
-## 4a · Machten vermenigvuldigen
+## 2d · Machten vermenigvuldigen
 
-*aˣ · aʸ = aˣ⁺ʸ*
+*aˣ · aʸ = aˣ⁺ʸ · in de oefentool: 4a*
 
 **De regel**
 
@@ -333,9 +333,9 @@ Ook een negatieve macht tel je gewoon op. Let goed op de tekens.
 - Je vermenigvuldigde de machten. Bij keer moet je ze optéllen.
 - De getallen vóór de letter moet je vermenigvuldigen, niet optellen.
 
-## 4b · Machten delen
+## 2e · Machten delen
 
-*aˣ ÷ aʸ = aˣ⁻ʸ en negatieve machten*
+*aˣ ÷ aʸ = aˣ⁻ʸ en negatieve machten · in de oefentool: 4b*
 
 **De regel**
 
@@ -387,9 +387,9 @@ Omdat elk grondtal tot de macht 0 gelijk is aan 1, mag je een losse 1 herschrijv
 - Je trok de verkeerde kant op af: het is boven min onder.
 - Machten aftrekken bij delen, niet optellen.
 
-## 4c · Schrijf als macht van 3
+## 2f · Schrijf als macht van 3
 
-*alles terugbrengen tot één macht van hetzelfde grondtal*
+*alles terugbrengen tot één macht van hetzelfde grondtal · in de oefentool: 4c*
 
 **Wat wordt er gevraagd**
 
@@ -436,9 +436,9 @@ Keer: machten optellen. Delen: machten aftrekken. Macht van een macht: machten v
 - Let op het teken: een oneven macht houdt het minteken, een even macht maakt het plus.
 - Bij vermenigvuldigen tel je de machten op; vermenigvuldigen doe je bij een macht van een macht.
 
-## 4d · Macht van een macht
+## 2g · Macht van een macht
 
-*(2x)², (1/y)², (2x²)⁻⁴*
+*(2x)², (1/y)², (2x²)⁻⁴ · in de oefentool: 4d*
 
 **De regel**
 
@@ -484,9 +484,9 @@ Maak van de breuk eerst een negatieve macht, dan is het gewoon een macht van een
 - Macht van een macht: die machten vermenigvuldig je.
 - Wat onder de streep stond, krijgt een negatieve macht.
 
-## 4e · Zo simpel mogelijk
+## 2h · Zo simpel mogelijk
 
-*alle machtsregels door elkaar, zonder haakjes en breuken*
+*alle machtsregels door elkaar, zonder haakjes en breuken · in de oefentool: 4e*
 
 **De volgorde van aanpak**
 
@@ -791,9 +791,9 @@ Bij "of" zit soms een kaart in allebei de groepen. Die heb je dan twee keer gete
 
 # Hoofdstuk 4: Haakjes
 
-## 1d · Haakjes wegwerken
+## 4a · Haakjes wegwerken
 
-*de vogelbekmethode: één paar haakjes*
+*de vogelbekmethode: één paar haakjes · in de oefentool: 1d*
 
 **Waarom wegwerken**
 
@@ -841,9 +841,9 @@ Vermenigvuldig je letters met elkaar, dan tel je hun machten op.
 - Tekenfout bij het tweede element: min keer min wordt plus.
 - De machten moet je optellen: a · a² = a³.
 
-## 1e · Dubbele haakjes
+## 4b · Dubbele haakjes
 
-*(x + 3)(x − 2) uitwerken*
+*(x + 3)(x − 2) uitwerken · in de oefentool: 1e*
 
 **Twee paar haakjes**
 
@@ -887,9 +887,9 @@ Alleen de termen met precies dezelfde letter én macht mag je bij elkaar optelle
 - Tekenfout in het laatste getal: let op min keer min.
 - Je hebt optellen en vermenigvuldigen verwisseld: de middelste term is de som, het laatste getal het product.
 
-## 7a · Buiten haakjes halen
+## 4c · Buiten haakjes halen
 
-*ontbinden in factoren, deel 1*
+*ontbinden in factoren, deel 1 · in de oefentool: 7a*
 
 **Het omgekeerde van haakjes wegwerken**
 
@@ -944,9 +944,9 @@ Haal je een heel element buiten de haakjes, dan blijft daar een 1 staan — geen
 
 # Hoofdstuk 5: Breuken zonder letters
 
-## 2a · Breuken optellen
+## 5a · Breuken optellen
 
-*vereenvoudigen, gelijknamig maken, optellen en aftrekken*
+*vereenvoudigen, gelijknamig maken, optellen en aftrekken · in de oefentool: 2a*
 
 **Teller en noemer**
 
@@ -996,9 +996,9 @@ De makkelijkste manier: vermenigvuldig de noemers met elkaar. Wat je met de noem
 - Je bent halverwege gestopt: deel door het grótste gemeenschappelijke getal.
 - De noemer blijft staan; alleen de tellers tel je op.
 
-## 2b · Breuken keer en gedeeld
+## 5b · Breuken keer en gedeeld
 
-*vermenigvuldigen, delen, en helen eruit halen*
+*vermenigvuldigen, delen, en helen eruit halen · in de oefentool: 2b*
 
 **Vermenigvuldigen**
 
@@ -1053,9 +1053,9 @@ Eén hele is noemer/noemer. Schrijf de hele eerst als breuk en tel dan op.
 
 # Hoofdstuk 6: Breuken met letters
 
-## 2c · Letterbreuken vereenvoudigen
+## 6a · Letterbreuken vereenvoudigen
 
-*wegstrepen wat overal in zit*
+*wegstrepen wat overal in zit · in de oefentool: 2c*
 
 **Zoek wat overal in zit**
 
@@ -1098,9 +1098,9 @@ Als je de gemeenschappelijke factor eerst buiten haakjes zet, zie je meteen wat 
 - De p valt boven én onder weg, dus die blijft niet staan.
 - Bij delen trek je de machten af, niet optellen.
 
-## 2d · Letterbreuken optellen
+## 6b · Letterbreuken optellen
 
-*noemers gelijk maken met letters erin*
+*noemers gelijk maken met letters erin · in de oefentool: 2d*
 
 **Zelfde regel als bij getallen**
 
@@ -1143,9 +1143,9 @@ Kijk of alle getallen door hetzelfde deelbaar zijn. Letters wegstrepen mag allee
 - Tellers én noemers optellen mag niet. Eerst de noemers gelijk maken.
 - De tellers moeten eerst met de andere noemer vermenigvuldigd worden.
 
-## 2e · Letterbreuken keer en gedeeld
+## 6c · Letterbreuken keer en gedeeld
 
-*vermenigvuldigen, delen en wegstrepen*
+*vermenigvuldigen, delen en wegstrepen · in de oefentool: 2e*
 
 **Vermenigvuldigen**
 
@@ -1193,9 +1193,9 @@ Kijk daarna altijd of er getallen deelbaar zijn en of er letters boven én onder
 
 # Hoofdstuk 7: Lijnen en vergelijkingen
 
-## 6a · Balansmethode
+## 7a · Balansmethode
 
-*vergelijkingen oplossen door beide kanten gelijk te houden*
+*vergelijkingen oplossen door beide kanten gelijk te houden · in de oefentool: 6a*
 
 **Denk aan een weegschaal**
 
@@ -1246,9 +1246,9 @@ Het snijpunt van twee lijnen vind je door de formules aan elkaar gelijk te stell
 - Je vergat nog door 8 te delen.
 - Tekenfout bij het overbrengen: het teken klapt om.
 
-## 6b · Balansmethode met haakjes
+## 7b · Balansmethode met haakjes
 
-*eerst haakjes weg, dan balanceren*
+*eerst haakjes weg, dan balanceren · in de oefentool: 6b*
 
 **Volgorde**
 
@@ -1292,9 +1292,9 @@ Deel beide kanten door het getal dat vóór de letter staat.
 - Tekenfout bij het overbrengen van de getallen.
 - Je vergat de −21 eerst weg te werken.
 
-## 6c · Ongelijkheden
+## 7c · Ongelijkheden
 
-*groter dan, kleiner dan, en welke kant het teken op staat*
+*groter dan, kleiner dan, en welke kant het teken op staat · in de oefentool: 6c*
 
 **De tekens**
 
@@ -1342,9 +1342,9 @@ Keuzes: `b > 5`, `b < 5`, `b < −5`, `b > −5`
 
 - Het teken staat de verkeerde kant op. Vul een proefwaarde in om het te controleren.
 
-## 6d · Richtingscoëfficiënt
+## 7d · Richtingscoëfficiënt
 
-*de a en de b uit y = ax + b halen*
+*de a en de b uit y = ax + b halen · in de oefentool: 6d*
 
 **De basisvorm**
 
@@ -1386,9 +1386,9 @@ Gebruik de balansmethode om de y alleen links te krijgen. Vergeet niet álle ele
 - Dat is de richtingscoëfficiënt. Het startgetal is het losse getal.
 - Dat is het startgetal. De rc staat vóór de x.
 
-## 6e · Functie van een lijn
+## 7e · Functie van een lijn
 
-*van twee punten naar y = ax + b*
+*van twee punten naar y = ax + b · in de oefentool: 6e*
 
 **Wat je zoekt**
 
@@ -1435,9 +1435,9 @@ Dat is de y-waarde waar x = 0 is. Weet je die niet, vul dan een punt in de formu
 
 # Hoofdstuk 8: Hogeregraadsfuncties
 
-## 7b · Som-productmethode
+## 8a · Som-productmethode
 
-*x² + bx + c ontbinden in twee paar haakjes*
+*x² + bx + c ontbinden in twee paar haakjes · in de oefentool: 7b*
 
 **De methode**
 
@@ -1477,9 +1477,9 @@ Werk de haakjes weer weg met de vogelbekmethode. Kom je op de oorspronkelijke so
 - Beide tekens omgedraaid. Let op: het product moet ook kloppen.
 - Je zette de b en de c in de haakjes. Je moet twee getallen zoeken met som b en product c.
 
-## 7c · Ontbinden, lastiger
+## 8b · Ontbinden, lastiger
 
-*eerst een factor eruit, of de vervangingsregel*
+*eerst een factor eruit, of de vervangingsregel · in de oefentool: 7c*
 
 **Eerst naar de vorm x² + bx + c**
 
@@ -1521,9 +1521,9 @@ Zie je x⁴ en x², dan verhouden de exponenten zich als 2:1. Noem x² even t, o
 - Je vergat de 5 die je aan het begin buiten haakjes hebt gezet.
 - De tekens binnen de haakjes kloppen niet.
 
-## 5c · Snijpunten met de assen
+## 8c · Snijpunten met de assen
 
-*waar snijdt de parabool de x-as en de y-as*
+*waar snijdt de parabool de x-as en de y-as · in de oefentool: 5c*
 
 **De y-as is makkelijk**
 
@@ -1565,9 +1565,9 @@ Een snijpunt is een punt, dus schrijf altijd beide getallen op: eerst de x, dan 
 - Op de x-as is de y-waarde 0, dus het getal hoort vooraan.
 - De coördinaten staan omgedraaid: eerst x, dan y.
 
-## 5d · Snijpunten met een lijn
+## 8d · Snijpunten met een lijn
 
-*parabool en horizontale lijn*
+*parabool en horizontale lijn · in de oefentool: 5d*
 
 **Gelijkstellen**
 
@@ -1610,9 +1610,9 @@ De oplossingen zijn de x-waarden. De y-waarde is bij een horizontale lijn voor b
 - Tekenfout bij het oplossen van de haakjes.
 - De lijn ligt op hoogte −3, dus de y-waarde van beide snijpunten is −3.
 
-## 5e · Functie van een grafiek
+## 8e · Functie van een grafiek
 
-*y = b(x − r)ᵍ + h invullen*
+*y = b(x − r)ᵍ + h invullen · in de oefentool: 5e*
 
 **De formule**
 
@@ -1661,9 +1661,9 @@ Vul een punt in dat op de grafiek ligt en los de vergelijking op naar b.
 - Let op het teken van r: in (x − r) betekent r = −2 dat er (x + 2) staat.
 - Je vergat de breedte b te bepalen met het gegeven punt.
 
-## 7d · Vergelijkingen oplossen
+## 8f · Vergelijkingen oplossen
 
-*ontbinden en dan elke factor op nul stellen*
+*ontbinden en dan elke factor op nul stellen · in de oefentool: 7d*
 
 **Wat je zoekt**
 
@@ -1711,9 +1711,9 @@ Meestal komen er twee oplossingen uit. Soms vallen ze samen en is er maar één.
 - Tekenfout bij het oplossen van de losse haakjes.
 - Tekenfout: uit (x + 3) = 0 volgt x = −3, niet x = 3.
 
-## 7e · Vergelijkingen, lastiger
+## 8g · Vergelijkingen, lastiger
 
-*balansmethode plus ontbinden in één opgave*
+*balansmethode plus ontbinden in één opgave · in de oefentool: 7e*
 
 **Altijd eerst = 0**
 

@@ -20,13 +20,15 @@ const HOOFDSTUKKEN: [string, string[]][] = [
 ]
 
 const { maakRng } = await imp('rng.ts')
+// Nummer zoals SOM het toont: hoofdstuk plus letter in volgorde
+const nr = (i: number, j: number) => `${i + 1}${"abcdefghijklmnop"[j]}`
 const c = (s: unknown) => '`' + String(s).replace(/`/g, "'") + '`'
 const tekst = (s: unknown) => String(s).replace(/\s+/g, ' ').trim()
 
 const md: string[] = []
 md.push('# Wiskunde')
 md.push('')
-md.push('> Alle theorie van de oefentoets **Startvaardigheden Wiskunde**, per opgavecode (1a t/m 7e). Dezelfde indeling als in het oefenspel SOM hierboven: lees hier de theorie en oefen daarna in SOM.')
+md.push('> Alle theorie van de oefentoets **Startvaardigheden Wiskunde**, per onderwerp (1a t/m 8g), genummerd en geordend zoals in het oefenspel SOM hierboven: lees hier de theorie en oefen daarna in SOM.')
 md.push('')
 md.push('## Overzicht')
 md.push('')
@@ -37,7 +39,7 @@ const onderwerpen: Record<string, any> = {}
 for (const [, codes] of HOOFDSTUKKEN) for (const code of codes) onderwerpen[code] = (await imp(`codes/${code}.ts`)).onderwerp
 
 HOOFDSTUKKEN.forEach(([naam, codes], i) => {
-  md.push(`| ${i + 1}. ${naam} | ${codes.map(k => `**${k}** ${onderwerpen[k].titel}`).join(' · ')} |`)
+  md.push(`| ${i + 1}. ${naam} | ${codes.map((k, j) => `**${nr(i, j)}** ${onderwerpen[k].titel}`).join(' · ')} |`)
 })
 md.push('')
 
@@ -45,11 +47,11 @@ let teller = 0
 HOOFDSTUKKEN.forEach(([naam, codes], i) => {
   md.push(`# Hoofdstuk ${i + 1}: ${naam}`)
   md.push('')
-  for (const code of codes) {
+  codes.forEach((code, j) => {
     const o = onderwerpen[code]
-    md.push(`## ${code} · ${o.titel}`)
+    md.push(`## ${nr(i, j)} · ${o.titel}`)
     md.push('')
-    md.push(`*${tekst(o.waarover)}*`)
+    md.push(`*${tekst(o.waarover)}${code !== nr(i, j) ? ` · in de oefentool: ${code}` : ""}*`)
     md.push('')
     for (const u of o.uitleg ?? []) {
       md.push(`**${tekst(u.kop)}**`)
@@ -103,7 +105,7 @@ HOOFDSTUKKEN.forEach(([naam, codes], i) => {
       for (const v of [...valkuilen].slice(0, 6)) md.push(`- ${v.split('\u0000')[1]}`)
       md.push('')
     }
-  }
+  })
 })
 
 md.push('# Eigen notities')
