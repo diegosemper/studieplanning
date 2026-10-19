@@ -1,17 +1,25 @@
 # Bedrijfskunde
 
-> Nog geen leerstof toegevoegd. Vervang deze tekst door je eigen samenvatting.
+> De volledige samenvatting en de oefenvragen staan in de **Tentamentrainer** hierboven. Kies daar "Samenvatting lezen" of start een toets.
 
-## Hoofdstuk 1
+## De 5 delen
 
-Schrijf hier je samenvatting. Je kunt **vet**, *schuin*, lijstjes en tabellen gebruiken.
+| Deel | Onderwerp |
+|---|---|
+| 1 | Business Model Canvas |
+| 2 | Business Intelligence met Power BI (HC 3 en 4) |
+| 3 | Kosten en Opbrengsten (HC 5) |
+| 4 | Procesmanagement (HC 6) |
+| 5 | Automatisering (HC 7) |
 
-- Belangrijk begrip: uitleg
-- Nog een begrip: uitleg
+## Formules om uit je hoofd te kennen
 
-<details>
-<summary>Oefenvraag: wat is ...?</summary>
+- Contributiemarge = verkoopprijs per stuk − variabele kosten per stuk
+- Break-evenpunt = vaste kosten ÷ contributiemarge
+- Resultaat = (contributiemarge × aantal) − vaste kosten
+- Eigen vermogen = activa − passiva
+- Dekkingsgraad = ondersteunde eisen ÷ totaal aantal eisen
 
-Het antwoord staat hier verstopt tot je erop klikt.
+## Eigen notities
 
-</details>
+Schrijf hier wat je zelf wilt onthouden.

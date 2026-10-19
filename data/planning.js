@@ -3,7 +3,7 @@ const VAKKEN = {
   db: { naam: 'Databases', bestand: 'databases.md' },
   wi: { naam: 'Wiskunde', bestand: 'wiskunde.md' },
   pr: { naam: 'Programmeren', bestand: 'programmeren.md' },
-  bk: { naam: 'Bedrijfskunde', bestand: 'bedrijfskunde.md' },
+  bk: { naam: 'Bedrijfskunde', bestand: 'bedrijfskunde.md', trainer: 'trainers/bedrijfskunde.html' },
   sv: { naam: 'Schriftelijke vaardigheden', kort: 'Schriftelijk', bestand: 'schriftelijke-vaardigheden.md' }
 };
 
