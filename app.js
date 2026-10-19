@@ -17,7 +17,27 @@ const bewaar = () => { try { localStorage.setItem('afgevinkt', JSON.stringify(af
 const urenPerVak = {};
 ALLE_DAGEN.forEach(([, , items]) => Array.isArray(items) && items.forEach(([c, h]) => { urenPerVak[c] = (urenPerVak[c] || 0) + h; }));
 const totaal = Object.values(urenPerVak).reduce((a, b) => a + b, 0);
-document.getElementById('total').textContent = totaal + ' uur';
+
+// Uren die nog niet afgevinkt zijn, voor alles of voor één vak
+const restUren = vak => ALLE_DAGEN.reduce((som, [iso, , items]) => som + (Array.isArray(items)
+  ? items.reduce((s, [c, h], idx) => s + (!afgevinkt[iso + ':' + idx] && (!vak || c === vak) ? h : 0), 0)
+  : 0), 0);
+
+let vorigeRest = null;
+function renderTotaal() {
+  const rest = restUren();
+  const el = document.getElementById('total');
+  el.textContent = rest + ' uur';
+  document.getElementById('total-sub').textContent = rest === totaal ? 'studietijd te gaan' : `nog te gaan van ${totaal} uur`;
+  document.getElementById('voortgang-balk').style.width = ((totaal - rest) / totaal * 100) + '%';
+  // Kort oplichten als het getal verandert
+  if (vorigeRest !== null && vorigeRest !== rest) {
+    el.classList.remove('flits');
+    void el.offsetWidth;
+    el.classList.add('flits');
+  }
+  vorigeRest = rest;
+}
 
 /* ---------- Planning ---------- */
 
@@ -44,7 +64,8 @@ const dayHtml = (d, i) => {
     return `<div class="day free${cls}">${head('')}<span class="free-label">Vrij</span><span class="free-sub">Rust pakken, verdiend</span></div>`;
   }
   const total = items.reduce((s, x) => s + x[1], 0);
-  return `<div class="day${cls}">${head(total ? total + 'u' : '')}
+  const rest = items.reduce((s, x, idx) => s + (afgevinkt[iso + ':' + idx] ? 0 : x[1]), 0);
+  return `<div class="day${cls}">${head(!total ? '' : rest === 0 ? '✓ klaar' : rest < total ? `nog ${rest}u` : total + 'u')}
     ${exam ? `<div class="exam"><small>TOETS</small><span>${esc(exam)}</span></div>` : ''}
     ${items.map((it, idx) => chip(iso, idx)(it)).join('')}
   </div>`;
@@ -77,7 +98,10 @@ function renderToday() {
 
 function renderPlanning() {
   document.getElementById('legend').innerHTML =
-    VAK_VOLGORDE.map(c => `<a class="pill" href="#leerstof/${c}" style="${pillStyle(c)}"><span class="dot" style="background:var(--${c}-dot)"></span>${VAKKEN[c].naam} ${urenPerVak[c] || 0}u</a>`).join('') +
+    VAK_VOLGORDE.map(c => {
+      const tot = urenPerVak[c] || 0, rest = restUren(c);
+      return `<a class="pill" href="#leerstof/${c}" style="${pillStyle(c)}"><span class="dot" style="background:var(--${c}-dot)"></span>${VAKKEN[c].naam} ${rest === tot ? tot + 'u' : rest === 0 ? '✓' : `nog ${rest} van ${tot}u`}</a>`;
+    }).join('') +
     `<div class="pill" style="background:var(--exam);color:#fff"><span class="dot" style="background:var(--exam-accent)"></span>Toetsdag</div>`;
 
   document.getElementById('weeks').innerHTML = WEEKS.map(([label, days]) => `
@@ -87,6 +111,7 @@ function renderPlanning() {
     </section>`).join('');
 
   renderToday();
+  renderTotaal();
 }
 
 document.addEventListener('click', e => {
@@ -124,7 +149,7 @@ function renderSessies(c) {
   document.getElementById('sessies').innerHTML = `
     <div class="sessies-kop">
       <h2>Jouw sessies</h2>
-      <span>${klaar} van ${sessies.length} gedaan · ${urenPerVak[c] || 0} uur</span>
+      <span>${klaar} van ${sessies.length} gedaan · nog ${restUren(c)} van ${urenPerVak[c] || 0} uur</span>
     </div>
     ${VAKKEN[c].aanpak ? `<p class="aanpak">${esc(VAKKEN[c].aanpak)}</p>` : ''}
     <ol>${sessies.map(rij).join('')}

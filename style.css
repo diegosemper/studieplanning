@@ -20,6 +20,11 @@ h1 { margin: 6px 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(3
 .total { text-align: right; }
 .total b { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 42px; }
 .total span { font-size: 14px; color: var(--muted); }
+.voortgang { margin-top: 8px; width: 200px; max-width: 100%; height: 8px; border-radius: 99px; background: var(--line); overflow: hidden; margin-left: auto; }
+.voortgang i { display: block; height: 100%; width: 0; background: var(--pr-dot); border-radius: 99px; transition: width .4s ease; }
+.total b.flits { animation: flits .6s ease; }
+@keyframes flits { 0% { color: var(--pr-dot); transform: scale(1.12); } 100% { color: inherit; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) { .total b.flits { animation: none; } .voortgang i { transition: none; } }
 
 /* Tabs */
 .tabs { display: flex; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 5px; align-self: flex-start; }
@@ -146,6 +151,7 @@ body.speelt { overflow: hidden; }
   .wd { display: inline; }
   .tips { grid-template-columns: 1fr; }
   .total { text-align: left; }
+  .voortgang { margin-left: 0; }
   .today-card { grid-template-columns: 1fr; }
   .countdown { text-align: left; }
   .today-items .chip { min-width: 0; width: 100%; }
