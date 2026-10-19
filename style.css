@@ -79,6 +79,31 @@ h1 { margin: 6px 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(3
 .vak-tabs { display: flex; flex-wrap: wrap; gap: 10px; }
 .vak-tabs .pill { border: 2px solid transparent; }
 .vak-tabs .pill.active { border-color: currentColor; }
+/* Sessies per vak */
+.sessies { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 24px; max-width: 900px; }
+.sessies-kop { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sessies-kop h2 { margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 22px; }
+.sessies-kop span { font-size: 14px; font-weight: 700; color: var(--muted); }
+.aanpak { margin: 8px 0 0; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.sessies ol { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.sessie { display: grid; grid-template-columns: 18px 92px 1fr auto; gap: 12px; align-items: center; border-radius: 10px; padding: 8px 12px; font-size: 15px; }
+.sessie .s-datum { font-weight: 700; white-space: nowrap; }
+.sessie .s-uren { font-weight: 700; }
+.sessie.done .s-wat, .sessie.done .s-datum, .sessie.done .s-uren { text-decoration: line-through; opacity: .6; }
+.sessie.done .check { background: currentColor; }
+.sessie.done .check::after { content: '✓'; color: #fff; font-weight: 700; }
+.sessie.today { outline: 3px solid var(--wi-dot); outline-offset: 1px; }
+.sessie.past:not(.done) { opacity: .7; }
+.sessie.toets { background: var(--exam); color: #fff; }
+.sessie.toets .s-wat { font-weight: 700; color: var(--exam-accent); }
+@media (max-width: 520px) {
+  .sessies { padding: 16px; }
+  .sessie { grid-template-columns: 18px 1fr auto; gap: 4px 10px; }
+  .sessie .s-datum { grid-column: 2; }
+  .sessie .s-wat { grid-column: 2 / 4; grid-row: 2; }
+  .sessie .s-uren { grid-column: 3; grid-row: 1; }
+}
+
 /* Oefenapp binnen de app, over het hele scherm */
 .speler { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; background: var(--bg); }
 .speler[hidden] { display: none; }

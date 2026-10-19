@@ -1,13 +1,20 @@
 // Vakken: afkorting -> naam en het leerstof-bestand in de map leerstof/
 const VAKKEN = {
-  db: { naam: 'Databases', bestand: 'databases.md' },
+  db: {
+    naam: 'Databases', bestand: 'databases.md',
+    aanpak: 'Je hebt stof uit 6 weken. Je leert steeds twee weken nieuw, oefent die een paar dagen later en herhaalt ze een week daarna nog eens. Zo blijft het beter hangen.'
+  },
   wi: {
     naam: 'Wiskunde', bestand: 'wiskunde.md', trainer: 'https://diegosemper.github.io/som/',
     trainerLabel: 'OEFENSPEL', trainerNaam: 'SOM: Startvaardigheden Wiskunde',
-    trainerTekst: 'Korte rondes van vijf sommen, met bij elke fout de hele uitwerking. Werkt het best op je telefoon.'
+    trainerTekst: 'Korte rondes van vijf sommen, met bij elke fout de hele uitwerking. Werkt het best op je telefoon.',
+    aanpak: 'De 8 hoofdstukken uit de leerstof hieronder, in dezelfde volgorde als in SOM. Lees per sessie eerst de theorie en oefen daarna dat hoofdstuk in SOM. Daarna volgen twee oefententamens.'
   },
   pr: { naam: 'Programmeren', bestand: 'programmeren.md' },
-  bk: { naam: 'Bedrijfskunde', bestand: 'bedrijfskunde.md', trainer: 'trainers/bedrijfskunde.html' },
+  bk: {
+    naam: 'Bedrijfskunde', bestand: 'bedrijfskunde.md', trainer: 'trainers/bedrijfskunde.html',
+    aanpak: 'De 5 delen één voor één. Lees per deel de samenvatting in de trainer en doe daarna 20 vragen over dat hoofdstuk. Op het einde volgt een volledig oefententamen.'
+  },
   sv: { naam: 'Schriftelijke vaardigheden', kort: 'Schriftelijk', bestand: 'schriftelijke-vaardigheden.md' }
 };
 

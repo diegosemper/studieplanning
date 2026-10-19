@@ -96,16 +96,49 @@ document.addEventListener('click', e => {
   if (afgevinkt[key]) delete afgevinkt[key]; else afgevinkt[key] = true;
   bewaar();
   renderPlanning();
+  if (huidigVak) renderSessies(huidigVak);
 });
 
 /* ---------- Leerstof ---------- */
 
 const cache = {};
+let huidigVak = null;
+
+// Alle sessies van één vak op een rij, met dezelfde afvinkjes als in de planning
+function renderSessies(c) {
+  const sessies = ALLE_DAGEN.filter(d => Array.isArray(d[2]))
+    .flatMap(d => d[2].map((it, idx) => ({ d, it, idx })).filter(x => x.it[0] === c));
+  const toets = ALLE_DAGEN.find(d => d[3] === VAKKEN[c].naam);
+  const wd = iso => WD[(new Date(iso + 'T00:00').getDay() + 6) % 7];
+  const klaar = sessies.filter(s => afgevinkt[s.d[0] + ':' + s.idx]).length;
+  const rij = ({ d, it, idx }) => {
+    const key = d[0] + ':' + idx;
+    const cls = (afgevinkt[key] ? ' done' : '') + (d[0] === todayIso ? ' today' : d[0] < todayIso ? ' past' : '');
+    return `<li class="sessie${cls}" style="${pillStyle(c)}">
+      <button class="check" data-key="${key}" aria-label="Afvinken"></button>
+      <span class="s-datum">${wd(d[0])} ${d[1]}</span>
+      <span class="s-wat">${esc(it[2] || 'Studeren')}</span>
+      <span class="s-uren">${it[1]}u</span>
+    </li>`;
+  };
+  document.getElementById('sessies').innerHTML = `
+    <div class="sessies-kop">
+      <h2>Jouw sessies</h2>
+      <span>${klaar} van ${sessies.length} gedaan · ${urenPerVak[c] || 0} uur</span>
+    </div>
+    ${VAKKEN[c].aanpak ? `<p class="aanpak">${esc(VAKKEN[c].aanpak)}</p>` : ''}
+    <ol>${sessies.map(rij).join('')}
+      ${toets ? `<li class="sessie toets"><span></span><span class="s-datum">${wd(toets[0])} ${toets[1]}</span><span class="s-wat">Toets ${esc(toets[3])}</span><span class="s-uren"></span></li>` : ''}
+    </ol>`;
+}
 
 async function renderLeerstof(c) {
   if (!VAKKEN[c]) c = VAK_VOLGORDE[0];
   document.getElementById('vak-tabs').innerHTML = VAK_VOLGORDE.map(v =>
     `<a class="pill${v === c ? ' active' : ''}" href="#leerstof/${v}" style="${pillStyle(v)}"><span class="dot" style="background:var(--${v}-dot)"></span>${VAKKEN[v].naam}</a>`).join('');
+
+  huidigVak = c;
+  renderSessies(c);
 
   const v = VAKKEN[c], t = v.trainer;
   document.getElementById('trainer').innerHTML = t ? `
