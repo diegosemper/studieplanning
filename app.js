@@ -160,6 +160,8 @@ async function renderLeerstof(c) {
     }
   }
   el.innerHTML = cache[c];
+  // Links naar andere sites in een nieuw tabblad, zodat je de app niet verlaat
+  el.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
 }
 
 /* ---------- Navigatie ---------- */
