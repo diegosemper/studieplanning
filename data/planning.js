@@ -26,19 +26,19 @@ const VAKKEN = {
 // [iso-datum, label, [[vak, uren, notitie?]...], toets?]
 const WEEKS = [
   ['Week 1 · 19 t/m 25 oktober', [
-    ['2026-10-19', '19 okt', [['wi', 2, 'H1 Rekenen + H2 tot en met machten delen (1a t/m 2e)'], ['bk', 1, 'Deel 1 BMC: bouwblok 1 t/m 4']]],
-    ['2026-10-20', '20 okt', [['db', 2, 'Week 1 en 2 leren'], ['wi', 1, 'H2 afmaken: machten (2f, 2g, 2h)']]],
+    ['2026-10-19', '19 okt', [['wi', 2, 'H1 Rekenen + H2 Algebra en machten'], ['bk', 1, 'Deel 1 BMC: bouwblok 1 t/m 4']]],
+    ['2026-10-20', '20 okt', [['db', 2, 'Week 1 en 2 leren'], ['wi', 1, 'H3 Statistiek en kansen']]],
     ['2026-10-21', '21 okt', [['db', 1, 'Week 1 en 2 oefenen'], ['pr', 2, 'Week 1 Picobot (kort) + week 2: variabelen, if, strings en lijsten']]],
     ['2026-10-22', '22 okt', [['db', 2, 'Week 3 en 4 leren'], ['bk', 1, 'Deel 1 BMC: bouwblok 5 t/m 9 + oefenen']]],
-    ['2026-10-23', '23 okt', [['wi', 2, 'H3 Statistiek en kansen + H4 Haakjes'], ['db', 1, 'Week 3 en 4 oefenen']]],
+    ['2026-10-23', '23 okt', [['wi', 2, 'H4 Haakjes + H5 Breuken zonder letters'], ['db', 1, 'Week 3 en 4 oefenen']]],
     ['2026-10-24', '24 okt', [['db', 2, 'Week 5 en 6 leren'], ['pr', 1, 'Week 3: functies, return, docstrings en asserts']]],
     ['2026-10-25', '25 okt', 'vrij']
   ]],
   ['Week 2 · 26 oktober t/m 1 november', [
-    ['2026-10-26', '26 okt', [['sv', 2], ['wi', 1, 'H5 Breuken zonder letters']]],
+    ['2026-10-26', '26 okt', [['sv', 2], ['wi', 1, 'H6 Breuken met letters']]],
     ['2026-10-27', '27 okt', [['sv', 2, 'tekst uit je hoofd'], ['db', 1, 'Week 5 en 6 oefenen']]],
     ['2026-10-28', '28 okt', [['bk', 2, 'Deel 2 Business Intelligence + deel 3 Kosten en opbrengsten']], 'Schriftelijke vaardigheden'],
-    ['2026-10-29', '29 okt', [['wi', 2, 'H6 Breuken met letters + H7 Lijnen'], ['db', 1, 'Herhalen week 1 en 2']]],
+    ['2026-10-29', '29 okt', [['wi', 2, 'H7 Lijnen en vergelijkingen'], ['db', 1, 'Herhalen week 1 en 2']]],
     ['2026-10-30', '30 okt', [['wi', 2, 'H8 Hogeregraadsfuncties'], ['pr', 1, 'Week 4: lussen (for, while, accumulator)']]],
     ['2026-10-31', '31 okt', [['wi', 2, 'Oefententamen: proeftoets in SOM'], ['db', 1, 'Herhalen week 3 en 4']]],
     ['2026-11-01', '1 nov', [['pr', 2, 'Week 5 geneste lussen + week 6 data en bestanden'], ['bk', 1, 'Deel 4 Procesmanagement']]]
