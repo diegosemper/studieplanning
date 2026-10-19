@@ -115,3 +115,5 @@ h1 { margin: 6px 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(3
   .today-items .chip { min-width: 0; width: 100%; }
   .leerstof { padding: 20px 18px; }
 }
+.leerstof h1:not(:first-child) { margin-top: 56px; padding-top: 24px; border-top: 3px solid var(--ink); font-size: 30px; }
+.leerstof h2 + p em { color: var(--muted); }

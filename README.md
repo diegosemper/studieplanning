@@ -46,3 +46,13 @@ De planning staat in `data/planning.js`. Elke dag ziet er zo uit:
 ```
 
 Afkortingen: `db` Databases, `wi` Wiskunde, `pr` Programmeren, `bk` Bedrijfskunde, `sv` Schriftelijke vaardigheden.
+
+## Wiskunde-leerstof bijwerken
+
+De theorie in `leerstof/wiskunde.md` komt uit het oefenspel SOM (`C:\Users\diego\som`). Verandert de uitleg daar, maak de leerstof dan opnieuw:
+
+```
+node --experimental-strip-types scripts/som-leerstof.mts C:/Users/diego/som leerstof/wiskunde.md
+```
+
+Let op: dat overschrijft het bestand, dus ook je eigen notities onderaan.
