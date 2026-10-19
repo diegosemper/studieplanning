@@ -1,7 +1,11 @@
 // Vakken: afkorting -> naam en het leerstof-bestand in de map leerstof/
 const VAKKEN = {
   db: { naam: 'Databases', bestand: 'databases.md' },
-  wi: { naam: 'Wiskunde', bestand: 'wiskunde.md' },
+  wi: {
+    naam: 'Wiskunde', bestand: 'wiskunde.md', trainer: 'https://diegosemper.github.io/som/',
+    trainerLabel: 'OEFENSPEL', trainerNaam: 'SOM: Startvaardigheden Wiskunde',
+    trainerTekst: 'Korte rondes van vijf sommen, met bij elke fout de hele uitwerking. Werkt het best op je telefoon.'
+  },
   pr: { naam: 'Programmeren', bestand: 'programmeren.md' },
   bk: { naam: 'Bedrijfskunde', bestand: 'bedrijfskunde.md', trainer: 'trainers/bedrijfskunde.html' },
   sv: { naam: 'Schriftelijke vaardigheden', kort: 'Schriftelijk', bestand: 'schriftelijke-vaardigheden.md' }

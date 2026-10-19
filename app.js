@@ -107,10 +107,10 @@ async function renderLeerstof(c) {
   document.getElementById('vak-tabs').innerHTML = VAK_VOLGORDE.map(v =>
     `<a class="pill${v === c ? ' active' : ''}" href="#leerstof/${v}" style="${pillStyle(v)}"><span class="dot" style="background:var(--${v}-dot)"></span>${VAKKEN[v].naam}</a>`).join('');
 
-  const t = VAKKEN[c].trainer;
+  const v = VAKKEN[c], t = v.trainer;
   document.getElementById('trainer').innerHTML = t ? `
     <a class="trainer-card" href="${t}">
-      <span><small>OEFENTENTAMEN</small><b>Tentamentrainer ${VAKKEN[c].naam}</b><span>Toetsen van 40 vragen met cijfer, uitleg bij elke fout en een samenvatting per hoofdstuk.</span></span>
+      <span><small>${v.trainerLabel || 'OEFENTENTAMEN'}</small><b>${v.trainerNaam || 'Tentamentrainer ' + v.naam}</b><span>${v.trainerTekst || 'Toetsen van 40 vragen met cijfer, uitleg bij elke fout en een samenvatting per hoofdstuk.'}</span></span>
       <span class="go">Start →</span>
     </a>` : '';
 
