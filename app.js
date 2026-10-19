@@ -109,7 +109,7 @@ async function renderLeerstof(c) {
 
   const v = VAKKEN[c], t = v.trainer;
   document.getElementById('trainer').innerHTML = t ? `
-    <a class="trainer-card" href="${t}">
+    <a class="trainer-card" href="#oefenen/${c}">
       <span><small>${v.trainerLabel || 'OEFENTENTAMEN'}</small><b>${v.trainerNaam || 'Tentamentrainer ' + v.naam}</b><span>${v.trainerTekst || 'Toetsen van 40 vragen met cijfer, uitleg bij elke fout en een samenvatting per hoofdstuk.'}</span></span>
       <span class="go">Start →</span>
     </a>` : '';
@@ -131,8 +131,26 @@ async function renderLeerstof(c) {
 
 /* ---------- Navigatie ---------- */
 
+// Oefenapps openen binnen de app. Het frame blijft geladen als je teruggaat,
+// zodat een toets waar je mee bezig bent niet opnieuw begint.
+function toonSpeler(vak) {
+  const v = VAKKEN[vak];
+  const open = !!(v && v.trainer);
+  document.getElementById('speler').hidden = !open;
+  document.body.classList.toggle('speelt', open);
+  if (!open) return false;
+  const frame = document.getElementById('speler-frame');
+  if (frame.dataset.vak !== vak) { frame.src = v.trainer; frame.dataset.vak = vak; }
+  document.getElementById('speler-titel').textContent = v.trainerNaam || 'Tentamentrainer ' + v.naam;
+  document.getElementById('speler-terug').href = '#leerstof/' + vak;
+  document.getElementById('speler-nieuw').href = v.trainer;
+  return true;
+}
+
 function route() {
   const [tab, vak] = (location.hash.slice(1) || 'planning').split('/');
+  if (tab === 'oefenen' && toonSpeler(vak)) return;
+  toonSpeler(null);
   const isLeerstof = tab === 'leerstof';
   document.getElementById('view-planning').hidden = isLeerstof;
   document.getElementById('view-leerstof').hidden = !isLeerstof;

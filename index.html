@@ -6,7 +6,7 @@
 <title>Studieplanning</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 <div class="wrap">
@@ -43,8 +43,17 @@
   </main>
 </div>
 
+<div id="speler" class="speler" hidden>
+  <div class="speler-bar">
+    <a id="speler-terug" href="#leerstof">← Terug</a>
+    <b id="speler-titel"></b>
+    <a id="speler-nieuw" target="_blank" rel="noopener">Nieuw tabblad ↗</a>
+  </div>
+  <iframe id="speler-frame" title="Oefenen" allow="autoplay; fullscreen"></iframe>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
-<script src="data/planning.js?v=4"></script>
-<script src="app.js?v=4"></script>
+<script src="data/planning.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

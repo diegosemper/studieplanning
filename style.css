@@ -79,6 +79,17 @@ h1 { margin: 6px 0; font-family: 'Space Grotesk', sans-serif; font-size: clamp(3
 .vak-tabs { display: flex; flex-wrap: wrap; gap: 10px; }
 .vak-tabs .pill { border: 2px solid transparent; }
 .vak-tabs .pill.active { border-color: currentColor; }
+/* Oefenapp binnen de app, over het hele scherm */
+.speler { position: fixed; inset: 0; z-index: 50; display: flex; flex-direction: column; background: var(--bg); }
+.speler[hidden] { display: none; }
+.speler-bar { display: flex; align-items: center; gap: 12px; padding: 10px 16px; padding-top: max(10px, env(safe-area-inset-top)); background: var(--exam); color: #fff; }
+.speler-bar a { color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; white-space: nowrap; }
+.speler-bar #speler-terug { background: var(--exam-accent); color: var(--exam); border-radius: 999px; padding: 6px 14px; }
+.speler-bar b { flex: 1; min-width: 0; font-family: 'Space Grotesk', sans-serif; font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.speler-bar #speler-nieuw { opacity: .75; font-size: 13px; }
+.speler iframe { flex: 1; width: 100%; border: 0; background: #fff; }
+body.speelt { overflow: hidden; }
+@media (max-width: 520px) { .speler-bar #speler-nieuw { display: none; } }
 #trainer:empty { display: none; }
 .trainer-card { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; background: var(--exam); color: #fff; border-radius: 18px; padding: 20px 24px; text-decoration: none; max-width: 900px; }
 .trainer-card > span:first-child { display: flex; flex-direction: column; gap: 4px; }

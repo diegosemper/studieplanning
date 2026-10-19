@@ -159,8 +159,9 @@ h2{font-size:24px; font-weight:800; margin-bottom:12px}
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
 <body>
-<div class="wrap"><a href="../#leerstof/bk" style="display:inline-block;margin-top:16px;font-size:15px;font-weight:700;color:var(--brand);text-decoration:none">← Terug naar studieplanning</a></div>
+<div class="wrap" id="terugbalk"><a href="../#leerstof/bk" target="_top" style="display:inline-block;margin-top:16px;font-size:15px;font-weight:700;color:var(--brand);text-decoration:none">← Terug naar studieplanning</a></div>
 <div class="wrap" id="app"></div>
+<script>if (window.top !== window) document.getElementById("terugbalk").hidden = true;</script>
 
 <script>
 const BANK = []; const GENS = [];
