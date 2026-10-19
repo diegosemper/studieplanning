@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studieplanning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Space+Grotesk:wght@600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="eyebrow">Tentamenweken 2026</div>
+      <h1>Mijn studieplanning</h1>
+      <p class="sub">19 oktober t/m 11 november · max 3 uur per dag · na elk uur 10 à 15 min pauze</p>
+    </div>
+    <div class="total"><b id="total"></b><span id="total-sub">totaal studietijd</span></div>
+  </header>
+
+  <nav class="tabs">
+    <a href="#planning" data-tab="planning">Planning</a>
+    <a href="#leerstof" data-tab="leerstof">Leerstof</a>
+  </nav>
+
+  <main id="view-planning" class="view">
+    <section id="today"></section>
+    <div class="legend" id="legend"></div>
+    <div class="weekdays"><div>Ma</div><div>Di</div><div>Wo</div><div>Do</div><div>Vr</div><div>Za</div><div>Zo</div></div>
+    <div id="weeks" class="weeks"></div>
+    <div class="tips">
+      <div class="tip"><small>PAUZE</small><span>Na elk uur 10 à 15 min, telefoon weg van je bureau.</span></div>
+      <div class="tip"><small>LUKT HET NIET?</small><span>Schuif het laatste uur door naar morgen, nooit het eerste.</span></div>
+      <div class="tip dark"><small>PRIORITEIT</small><span>Databases is je risicovak. Die uren sla je nooit over.</span></div>
+    </div>
+  </main>
+
+  <main id="view-leerstof" class="view" hidden>
+    <div class="vak-tabs" id="vak-tabs"></div>
+    <article id="leerstof" class="leerstof"></article>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="data/planning.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
